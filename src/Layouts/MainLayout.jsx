@@ -1,23 +1,4 @@
-// import React from "react";
-// import Navbar from "../Components/Header/Navbar";
-// import Footer from "../Components/Footer/Footer";
-// import { Outlet } from "react-router";
 
-// const MainLayout = () => {
-//   return (
-//     <div className="flex flex-col h-screen ">
-//       <Navbar />
-//       <div className="flex-1">
-//         <Outlet />
-//       </div>
-//       <Footer />
-//     </div>
-//   );
-// };
-
-// export default MainLayout;
-
-// MainLayout.jsx - Updated version
 import React, { useState, useEffect } from "react";
 import Navbar from "../Components/Header/Navbar";
 import Footer from "../Components/Footer/Footer";

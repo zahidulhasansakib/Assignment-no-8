@@ -29,6 +29,9 @@ export const localUpdateApps = (product) => {
   }
 };
 
+
+
+
 // ! Delete data from local storage
 export const removeLocalStorageInstallApp = (id) => {
   console.log(id);
