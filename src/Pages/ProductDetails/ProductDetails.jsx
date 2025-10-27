@@ -209,12 +209,12 @@ const ProductDetails = ({ findProduct }) => {
 
     checkInstallStatus();
 
-    // Listen for storage changes
+
     window.addEventListener("storage", checkInstallStatus);
     return () => window.removeEventListener("storage", checkInstallStatus);
   }, [id]);
 
-  // ✅ FIXED: Install function with proper state management
+ 
   const handleInstall = () => {
     if (isInstalled) return;
 
@@ -222,16 +222,16 @@ const ProductDetails = ({ findProduct }) => {
 
     setTimeout(() => {
       try {
-        // 1. FIRST: Update install status in localStorage
+    
         const installStatus =
           JSON.parse(localStorage.getItem("installStatus")) || {};
         installStatus[id] = true;
         localStorage.setItem("installStatus", JSON.stringify(installStatus));
 
-        // 2. THEN: Add to installApps (if not duplicate)
+        //  Add to installApps 
         const result = localUpdateApps(findProduct);
 
-        // 3. FINALLY: Update UI state
+        // Update UI state
         setIsInstalled(true);
 
         if (result.success) {
@@ -324,7 +324,7 @@ const ProductDetails = ({ findProduct }) => {
               </div>
             </div>
 
-            {/* ✅ FIXED: Install Button with proper states */}
+            {/* Install Button with proper states */}
             <div className="mt-5">
               {isInstalled ? (
                 <button

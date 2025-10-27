@@ -14,18 +14,9 @@ const Apps = () => {
   const { id } = useParams(); 
 
 
-
-  
-
-  
   const queryId = searchParams.get("id");
   const pathId = id;
   const urlId = pathId || queryId; 
-
-  console.log("🔍 Path ID:", pathId);
-  console.log("🔍 Query ID:", queryId);
-  console.log("🎯 Final URL ID:", urlId);
-
   const handleSearchChange = (e) => {
     const value = e.target.value;
     setSearchApps(value);
@@ -40,7 +31,7 @@ const Apps = () => {
     if (showLoading) {
       const timer = setTimeout(() => {
         setShowLoading(false);
-      }, 800);
+      }, 200);
       return () => clearTimeout(timer);
     }
   }, [showLoading]);

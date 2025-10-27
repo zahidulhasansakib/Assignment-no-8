@@ -69,7 +69,7 @@ const Footer = () => {
                 placeholder="Enter your email"
                 className="px-4 py-2 rounded-md bg-gray-800 text-gray-300 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 text-sm sm:text-base w-full"
               />
-              <button className="btn cursor-pointer px-4 py-2 text-lg font-normal md:font-semibold text-white bg-gradient-to-r from-[#632EE3] to-[#9F62F2] shadow-none border-none w-full md:w-auto">
+              <button className="btn cursor-pointer px-4 py-2 text-lg font-normal md:font-semibold text-white bg-gradient-to-r from-[#32c9a0] to-[#04783c] shadow-none border-none w-full md:w-auto">
                 Subscribe
               </button>
             </div>
